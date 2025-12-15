@@ -1,0 +1,18 @@
+
+
+.cabecalho{
+    background-color: #0D0D0D;
+    width: 100%;
+    height: 140px;
+    color: var(--colorSecundary) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.cabecalho h1{
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    text-decoration: underline;
+}

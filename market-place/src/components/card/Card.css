@@ -1,0 +1,86 @@
+/* .card{
+    background-color: var(--colorCard);
+    height: 380px;
+    width: 325px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+
+
+.fotoComida{
+    height: 190px;
+    width: 260px;
+    border-radius: 5px;
+}
+
+.nome-comida{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700; para dar destaque 
+    font-size: 1.5rem; /* ajustar conforme o layout
+    color: var(--colorSecundary);
+} */
+
+/* Container dos cards */
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+  padding: 40px;
+  background-color: #121212; /* fundo escuro gourmet */
+}
+
+/* Card individual */
+.item-comida {
+  background: #1c1c1c;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover elegante */
+.item-comida:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.8);
+}
+
+/* Imagem da comida */
+.fotoComida {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Zoom suave na imagem */
+.item-comida:hover .fotoComida {
+  transform: scale(1.08);
+}
+
+/* Nome do prato */
+.nome-comida {
+  padding: 16px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f5f5f5;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .card {
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .fotoComida {
+    height: 180px;
+  }
+}
+
