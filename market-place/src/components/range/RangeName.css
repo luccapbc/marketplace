@@ -1,0 +1,36 @@
+.div-icone{
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  color: var(--colorSecundary) ;
+  border-top: 1px solid var(--colorSecundary);
+  border-bottom: 1px solid var(--colorSecundary);
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  height: 85px;
+  background-color: var(--colorPimary);
+  position: fixed;
+  width: 1519px;
+  top: 140px;
+  left: 0;
+}
+
+.div-icone h2{
+    margin-left: auto;
+    text-decoration:underline;
+    font-size: 25px;
+    width: 75%;
+    text-align: center;
+}
+
+.icone{
+    background-color: var(--colorSecundary);
+    height: 58px;
+    width: 58px;
+    border-radius: 50%;
+    margin-right: 135px;
+}
+
+.icone img{
+    height: 35px;
+}
